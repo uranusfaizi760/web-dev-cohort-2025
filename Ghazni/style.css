@@ -15,6 +15,7 @@
   --seventh-color: #f5a623;
   --eight-color: #fff;
   --nine-color: #6b7280;
+  --tenth-color: #99582a;
 }
 
 body {
@@ -32,9 +33,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
+span {
+  color: var(--fourth-color);
+  font-size: 3.5rem;
+}
 .logo {
   /* background-color: bisque; */
   margin: 0 4rem;
@@ -45,7 +49,7 @@ header {
 
 .navbar {
   /* background-color: aquamarine; */
-  margin: 0 14.5rem;
+  margin: 0 14.3rem;
   width: 100vw;
 }
 
@@ -89,7 +93,7 @@ main .hero {
 .hero-para {
   text-align: center;
   position: relative;
-  top: 10rem;
+  top: 6rem;
 }
 
 .hero-para h1,
@@ -102,6 +106,26 @@ p {
 
 .hero-para p {
   font-size: 1.3rem;
+}
+
+.btn {
+  margin-top: 2rem;
+  padding: 0.6rem 2rem;
+  font-size: 1.2rem;
+  color: var(--eight-color);
+  background-color: var(--fourth-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  right: 29rem;
+}
+
+.btn:hover {
+  background-color: var(--tenth-color);
+  color: var(--eight-color);
+  padding: 0.8rem 2.5rem;
+  transition: 0.3s;
 }
 /* hero section end */
 
