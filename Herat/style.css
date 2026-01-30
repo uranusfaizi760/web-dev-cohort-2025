@@ -1,0 +1,23 @@
+:root {
+    --ocean-blue: #1F6AE1;
+    --deep-navy: #0B1F3B;
+    --sand-beige: #F3ECDC;
+    --soft-aqua: #6FD1C7;
+    --sunset-coral: #FF6B5A;
+    --palm-green: #2FA36B;
+    --cloud-white: #FFFFFF;
+    --slate-gray: #6B7280;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: var(--sand-beige);
+    color: var(--slate-gray);
+    line-height: 1.7;
+}
