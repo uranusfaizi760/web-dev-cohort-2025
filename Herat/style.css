@@ -1,0 +1,132 @@
+:root {
+    --ocean-blue: #1F6AE1;
+    --deep-navy: #0B1F3B;
+    --sand-beige: #F3ECDC;
+    --soft-aqua: #6FD1C7;
+    --sunset-coral: #FF6B5A;
+    --palm-green: #2FA36B;
+    --cloud-white: #FFFFFF;
+    --slate-gray: #6B7280;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: var(--sand-beige);
+    color: var(--slate-gray);
+    line-height: 1.7;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+.attractions {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* Header */
+.attractions-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.attractions-header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: var(--deep-navy);
+    margin-bottom: 12px;
+}
+
+.attractions-header p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    max-width: 650px;
+    margin: auto;
+}
+
+.attraction-card {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 25px;
+    background-color: var(--cloud-white);
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 35px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Image */
+.attraction-card img {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Content */
+.attraction-content h2 {
+    font-size: 1.6rem;
+    color: var(--ocean-blue);
+    margin-bottom: 10px;
+}
+
+.attraction-content p {
+    margin-bottom: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: var(--ocean-blue);
+    color: var(--cloud-white);
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--deep-navy);
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Tablet Responsive
+========================= */
+@media (max-width: 900px) {
+    .attraction-card {
+        grid-template-columns: 220px 1fr;
+    }
+
+    .attraction-content h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+@media (max-width: 600px) {
+    .attraction-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .attraction-card img {
+        height: 220px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
