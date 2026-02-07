@@ -1,36 +1,287 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebDev</title>
-    <link rel="stylesheet" href="Style.css"> 
-    <style>body{background-color: rgb(200, 200, 235);} </style> 
-    
+    <title>Afghanistan Tourism</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F3ECDC;
+            color: #0B1F3B;
+        }
+
+        /* ---------- NAVBAR ---------- */
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #6FD1C7;
+        }
+
+        /* ---------- HERO ---------- */
+        .hero {
+            height: 55vh;
+            background: linear-gradient(
+                rgba(11, 31, 59, 0.55),
+                rgba(11, 31, 59, 0.55)
+            ),
+            url("images/afghanistan-hero.jpg") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto 25px;
+            color: #F3ECDC;
+        }
+
+        .hero a {
+            background-color: #1F6AE1;
+            color: #FFFFFF;
+            padding: 12px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .hero a:hover {
+            background-color: #0B1F3B;
+        }
+
+        /* ---------- SECTION ---------- */
+        section {
+            padding: 70px 40px;
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #1F6AE1;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 14px;
+            color: #6B7280;
+            margin-bottom: 40px;
+        }
+
+        /* ---------- GRID ---------- */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 18px;
+            text-align: left;
+        }
+
+        .card-content h3 {
+            font-size: 18px;
+            color: #1F6AE1;
+            margin-bottom: 8px;
+        }
+
+        .card-content p {
+            font-size: 13px;
+            color: #6B7280;
+            margin-bottom: 15px;
+        }
+
+        .card-content a {
+            display: inline-block;
+            background-color: #2FA36B;
+            color: #FFFFFF;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .card-content a:hover {
+            background-color: #FF6B5A;
+        }
+
+        /* ---------- CTA ---------- */
+        .cta {
+            background: linear-gradient(
+                rgba(31, 106, 225, 0.9),
+                rgba(31, 106, 225, 0.9)
+            ),
+            url("images/footer-bg.jpg") center/cover no-repeat;
+            padding: 80px 20px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .cta h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .cta p {
+            font-size: 14px;
+            margin-bottom: 25px;
+            color: #F3ECDC;
+        }
+
+        .cta a {
+            background-color: #FF6B5A;
+            color: #FFFFFF;
+            padding: 12px 34px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .cta a:hover {
+            background-color: #2FA36B;
+        }
+    </style>
 </head>
 <body>
-    <h1>This is the h1</h1>
-    <h2>this is h2</h2>
-    <h3>this is h3</h3>
-    <p style="color: #ff9999; font-size: 20px;">Hello This is our first time trying to deploy out website.</p>
-    
-    <ul>
-        <li>potato       </li>
-        <li>tomato       </li>
 
-    </ul>
+    <!-- NAVBAR -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="">???</a>
+        <a href="">???</a>
+        <a href="about.html">About</a>
+    </nav>
 
+    <!-- HERO -->
+    <div class="hero">
+        <div>
+            <h1>Explore Afghanistan</h1>
+            <p>Discover culture, history, food, and breathtaking landscapes across Afghanistan.</p>
+            <a href="#Provinces">Explore Provinces</a>
+        </div>
+    </div>
 
-    <ol>
-        <li>step 1</li>
-        <li>step 2</li>
+    <!-- PROVINCES -->
+    <section id="Provinces">
+        <h2>Our Provinces</h2>
+        <p>Click a province to explore attractions, food, and galleries.</p>
 
-    </ol>
+        <div class="grid">
+            <div class="card">
+                <img src="images/badakhshan.jpg" alt="Badakhshan">
+                <div class="card-content">
+                    <h3>Badakhshan</h3>
+                    <p> ????? </p>
+                    <a href="Badakhshan/index.html">Explore</a>
+                </div>
+            </div>    
+            <div class="card">
+                <img src="images/bamyan.webp" alt="Bamyan">
+                <div class="card-content">
+                    <h3>Bamyan</h3>
+                    <p>Valleys, heritage, and stunning natural beauty.</p>
+                    <a href="Bamyan/index.html">Explore</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/faryab.jpg" alt="Faryab">
+                <div class="card-content">
+                    <h3>Faryab</h3>
+                    <p>??????????</p>
+                    <a href="Faryab/index.html">Explore</a>
+                </div>
+            </div>
+             <div class="card">
+                <img src="images/ghazni.jpg" alt="Ghazni">
+                <div class="card-content">
+                    <h3>Ghazni</h3>
+                    <p>?????????.</p>
+                    <a href="Ghazni/index.html">Explore</a>
+                </div>
+            </div>           
+            <div class="card">
+                <img src="images/herat.jpg" alt="Herat">
+                <div class="card-content">
+                    <h3>Herat</h3>
+                    <p>A city of art, poetry, and architecture.</p>
+                    <a href="Herat/index.html">Explore</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/kabul.jpg" alt="Kabul">
+                <div class="card-content">
+                    <h3>Kabul</h3>
+                    <p>The heart of Afghanistan, rich in culture and history.</p>
+                    <a href="Kabul/index.html">Explore</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/mazar.jpg" alt="Mazar">
+                <div class="card-content">
+                    <h3>Mazar</h3>
+                    <p>Home of the iconic Blue Mosque.</p>
+                    <a href="Mazar/index.html">Explore</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/parwan.jpg" alt="Parwan">
+                <div class="card-content">
+                    <h3>Parwan</h3>
+                    <p>?????????</p>
+                    <a href="Parwan/index.html">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <img src="IMG/download.jpg" alt="This is Aryana.">
-
-    <a href="https://www.youtube.com/watch?v=o_A2ki_PJy8">This is a link to a video</a>
-
-
+    <!-- CTA -->
+    <div class="cta">
+        <h2>Plan Your Journey Today</h2>
+        <p>Experience the beauty and diversity of Afghanistan.</p>
+        <a href="#Provinces">Get Started</a>
+    </div>
 
 </body>
 </html>

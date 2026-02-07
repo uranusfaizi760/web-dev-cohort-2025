@@ -1,0 +1,358 @@
+/* Roina css codes start*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #1f6ae1;
+  --secondary-color: #0b1f3b;
+  --third-color: #f3ecdc;
+  --fourth-color: #ff6b5a;
+  --fifth-color: #6fd1c7;
+  --sixth-color: #2fa36b;
+  --seventh-color: #f5a623;
+  --eight-color: #fff;
+  --nine-color: #6b7280;
+  --tenth-color: #99582a;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #2fa36b; */
+  /* color: #333; */
+  width: 90vw;
+  height: 100vh;
+}
+
+/* header start */
+header {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0.01rem 0;
+}
+
+span {
+  color: var(--fourth-color);
+  font-size: 3.5rem;
+}
+.Index-logo {
+  /* background-color: bisque; */
+  margin: 0 4rem;
+  color: var(--eight-color);
+  font-size: 3rem;
+  font-family: cursive;
+}
+
+.Index-navbar {
+  /* background-color: aquamarine; */
+  margin: 0 14rem;
+  width: 100vw;
+}
+
+.Index-navbar nav ul {
+  display: flex;
+  flex-direction: row;
+}
+.Index-navbar nav ul li {
+  list-style: none;
+}
+.Index-navbar nav ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-decoration: none;
+  font-family: cursive;
+  font-size: 1.2rem;
+  color: var(--eight-color);
+}
+
+/* header end  */
+
+/* hero section start */
+main .hero-section {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:
+    linear-gradient(rgba(58, 52, 52, 0.2), rgba(56, 50, 50, 0.2)),
+    url("../Ghazni/images/غزنی/majestic-mosque-islamic-new-year-celebration-with-fantasy-architecture\ \(1\).jpg");
+  background-position: center;
+}
+
+.hero-para {
+  text-align: center;
+  position: relative;
+  top: 12rem;
+  display: inline-block;
+}
+.hero-para h1,
+.Ph {
+  color: var(--eight-color);
+  padding: 0.4rem 4.5rem;
+  display: flex;
+  justify-content: start;
+}
+
+.hero-para p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  margin-top: 0.8rem;
+  padding: 0.6rem 2rem;
+  font-size: 1.2rem;
+  color: var(--eight-color);
+  background-color: var(--fourth-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  right: 24.4rem;
+}
+
+.btn:hover {
+  background-color: var(--tenth-color);
+  color: var(--eight-color);
+  padding: 0.8rem 2.5rem;
+  transition: 0.3s;
+}
+/* hero section end */
+
+/* about section start */
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: var(--primary-color); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about img {
+  width: 25rem;
+  height: 30rem;
+  /* background-color: aqua; */
+  position: relative;
+  top: 2.5rem;
+  margin: 0 4rem;
+  box-shadow: 10px 9px 40px #99582a;
+  border-radius: 0.8rem;
+  filter: blur(0.3px);
+}
+
+.about img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  border-radius: 0.2rem;
+  filter: brightness(1.2);
+}
+
+.about .parag p {
+  /* text-wrap: wrap; */
+  color: var(--secondary-color);
+  position: relative;
+  top: 10rem;
+  width: 40rem;
+  letter-spacing: 0.04rem;
+  line-height: 1.3rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.about .parag h1 {
+  margin-top: 10rem 0;
+  display: inline;
+  /* background-color: #f5a623; */
+  position: relative;
+  top: 9rem;
+}
+/* about section ends */
+
+/* pages section start */
+.pages {
+  background-color: var(--third-color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  gap: 1.7rem;
+  align-items: center;
+}
+
+.pages .image-size img {
+  width: 23rem;
+  height: 15rem;
+  box-shadow: 2px 6px 10px var(--secondary-color);
+  border-radius: 0.4rem;
+}
+.pages .image-size img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  border-radius: 0.2rem;
+  filter: brightness(1.2);
+}
+
+.pages .image-size .par {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  width: 20rem;
+  margin-top: 14px;
+  position: relative;
+  left: 1.5rem;
+}
+.bun {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  position: relative;
+  left: 5.5rem;
+  margin-top: 14px;
+  padding: 0.6rem 2rem;
+  font-size: 1.2rem;
+  color: var(--eight-color);
+  background-color: var(--fourth-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bun:hover {
+  background-color: var(--tenth-color);
+  color: var(--eight-color);
+  padding: 0.8rem 2.5rem;
+  transition: 0.3s;
+}
+/* pages section ends*/
+
+/* update section start */
+
+.update {
+  width: 100vw;
+  height: 100vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../Ghazni/images/غزنی/cave-town-zelve-valley-cappadocia-turkey.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+.update .update-container {
+  width: 70vw;
+  height: 75vh;
+  background: linear-gradient(
+    rgba(159, 157, 157, 0.4),
+    rgba(164, 162, 162, 0.4)
+  );
+  position: relative;
+  top: 5rem;
+  left: 6rem;
+}
+
+.update .update-container h1 {
+  color: var(--eight-color);
+  position: relative;
+  top: 0.4rem;
+  left: 2.3rem;
+}
+.update .update-container p {
+  width: 55vw;
+  color: var(--eight-color);
+  font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+  text-wrap: wrap;
+  position: relative;
+  top: 1rem;
+  left: 2rem;
+  display: flex;
+}
+
+.update .update-container .btnn {
+  width: 12rem;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  position: relative;
+  left: 2.6rem;
+  margin-top: 2.5rem;
+  padding: 0.6rem 2rem;
+  font-size: 1.2rem;
+  color: var(--eight-color);
+  background-color: var(--fourth-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update .update-container .btnn:hover {
+  background-color: var(--tenth-color);
+  color: var(--eight-color);
+  padding: 0.8rem 2.5rem;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+/* update section ends */
+
+/* footer start */
+
+.Index-footer {
+  background-color: var(--third-color);
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 21vh;
+}
+.Index-footer .copy {
+  margin-top: 2px;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+.Index-footer .copy h3 .font {
+  color: var(--fourth-color);
+  font-size: 2rem;
+  font-family: cursive;
+}
+.links .logo {
+  color: #0b1f3b;
+  position: relative;
+  left: 4.7rem;
+  font-size: 35px;
+  font-family: cursive;
+}
+
+.Index-footer .links a,
+p {
+  text-decoration: none;
+  padding: 0 0.5rem;
+  font-size: 1.6rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* footer ends */
+
+/* Roina css codes end */
